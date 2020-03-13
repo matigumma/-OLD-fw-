@@ -1,0 +1,76 @@
+{
+    "presets": [
+      ["@babel/preset-env",{
+        "useBuiltIns": "usage",
+        "targets": {
+          "chrome": "49",
+          "ie": "11"
+        },
+        "corejs": 3
+      }],
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      ["@babel/plugin-transform-runtime",{
+        "absoluteRuntime": false,
+        "corejs": 2,
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false
+      }],
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      "@babel/plugin-proposal-class-properties",
+      // "transform-decorators-legacy",
+      "@babel/plugin-syntax-dynamic-import",
+      "transform-class-properties", 
+        "react-hot-loader/babel", 
+        "syntax-dynamic-import"
+      // ["import", {
+      //   "libraryName": "antd",
+      //   "libraryDirectory": "es",
+      //   "style": true // `style: true` 会加载 less 文件
+      // }]
+    ],
+    "env": {
+        "test": {
+            "plugins": [
+                "transform-es2015-modules-commonjs"
+            ]
+        }
+    }
+  }
+
+/* {
+    "presets": [
+        "@babel/preset-react",
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "browsers": "last 2 versions"
+                },
+                "modules": false,
+                "loose": false
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-proposal-class-properties", 
+        "transform-class-properties", 
+        "react-hot-loader/babel", 
+        "syntax-dynamic-import"
+    ],
+    "env": {
+        "test": {
+            "plugins": [
+                "transform-es2015-modules-commonjs"
+            ]
+        }
+    }
+} */

@@ -1,0 +1,62 @@
+.carousel-caption{
+    overflow: hidden;
+}
+@media (min-width: 992px), (max-width: 1044px){
+    .carousel-caption{
+        margin-bottom: 0!important;
+    }
+}
+.caption{
+    font-family: 'ostrich_sansheavy'!important;
+    font-size: 2.5rem;    
+    margin-bottom: 4rem;
+}
+/*carousel front*/
+.carousel-caption{
+    font-family: 'ostrich_sansheavy'!important;
+    font-size: 1.3rem;    
+    bottom: 0;
+    top : 20px;
+    text-shadow: 2px 2px 2px #343a40;
+}
+.carousel-caption h1{
+    font-size: 4rem;
+}
+div.espuma{
+    margin-top: -45px;
+    background-image: url('/assets/img/espuma.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+@media (max-width: 425px) {
+    div.espuma{
+        height:40px;
+        margin-top: -30px!important;
+    }
+}
+.transitions-item {
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    will-change: transform, opacity, height;
+    white-space: nowrap;
+    line-height: 80px;
+}
+.small-item h1{
+    font-size: 3rem!important;
+    text-align: right;
+}
+.small-item p{
+    display: none;
+    font-size: 1rem!important;
+}

@@ -1,0 +1,9 @@
+.counters span div:first-child{
+    display: grid!important;
+    grid-auto-rows: auto;
+    grid-column: 4;
+    padding: 1px;
+    margin: 1px;
+/*     background-color: rgba(255, 255, 255, 0.5)!important;
+    align-items: center; */
+}
